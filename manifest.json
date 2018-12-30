@@ -1,0 +1,19 @@
+{
+
+    "manifest_version": 2,
+    "name": "github-review-diff-maximiser",
+    "version": "0.2",
+
+    "description": "Updates the Github PR view to use the entire screen width to view the diff.",
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.github.com/*"],
+            "js": ["maximise.js"]
+        }
+    ],
+    "permissions": [
+        "<all_urls>"
+    ]
+
+}
